@@ -1,0 +1,30 @@
+
+image:
+    file: .gitpod/Dockerfile
+
+tasks:
+
+  - name: Rust - Installation
+    # before: cargo build 
+    command: cargo run
+
+  - name: Python - Installation
+    before: source .pyvenv/bin/activate
+    init: pip install -r requirements.txt
+    command: python src/main.py
+
+  - name: JS - Installation
+    before: npm install
+    command: npm run test
+
+  - name: Dart - Installation
+    before:  dart pub get
+    init: dart --version
+    command: dart src/main.dart
+
+# vscode:
+  # extensions:
+  #   - rust-lang.rust-analyzer.0.3.1277
+
+
+

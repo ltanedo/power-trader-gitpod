@@ -1,0 +1,20 @@
+[package]
+name = "rust-starter"
+version = "2.0.0-beta"
+authors = ["Abid Omar <contact@omarabid.com>"]
+edition = "2021"
+repository = "https://github.com/omarabid/rust-starter"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "starter"]
+description = """
+Rust Starter aims to provide high quality components to bootstrap your Rust CLI Project. It includes a battery of most used libraries; and defines a set of Rust best practices.
+"""
+
+[dependencies]
+polars = { version = "0.40.0", features = ["lazy", "dtype-categorical"] }
+atoi = { version = "0.3.0" }
+reqwest = { version = "0.12.7", features = ["json", "blocking"] }
+tokio = { version = "1.39.3", features = ["full"] }
+serde_json = "1.0"
+futures = "0.3"
