@@ -4,3 +4,6 @@ Cargo.lock
 .cache
 custom_config.toml
 .DS_Store
+
+# ignore folders
+__archive__/

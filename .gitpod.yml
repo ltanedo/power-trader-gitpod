@@ -1,26 +1,35 @@
 
 image:
-    file: .gitpod/Dockerfile
+    file: ./Dockerfile
 
 tasks:
 
-  - name: Rust - Installation
-    # before: cargo build 
+  - name: DENO @1.46.2
+    before: 
+      curl -fsSL https://deno.land/x/install/install.sh | sh;
+      export DENO_INSTALL="/home/gitpod/.deno";
+      export PATH="$DENO_INSTALL/bin:$PATH";
+      deno jupyter --install;
+    # init:
+    command: deno jupyter
+
+  - name: Dart @3.5.x
+    # before:  
+    init: dart pub get
+    command: dart src/main.dart
+
+  - name: Rust @1.79
+    # init: cargo build 
     command: cargo run
 
-  - name: Python - Installation
+  - name: NodeJS @20.16
+    init: npm install
+    command: npm run test
+
+  - name: Python @3.12
     before: source .pyvenv/bin/activate
     init: pip install -r requirements.txt
     command: python src/main.py
-
-  - name: JS - Installation
-    before: npm install
-    command: npm run test
-
-  - name: Dart - Installation
-    before:  dart pub get
-    init: dart --version
-    command: dart src/main.dart
 
 # vscode:
   # extensions:

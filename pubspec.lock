@@ -38,6 +38,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  aws_lambda_dart_runtime_ns:
+    dependency: "direct main"
+    description:
+      name: aws_lambda_dart_runtime_ns
+      sha256: "9151c3d86df9f01317379fc81649f239d18ff61ecd5d458d2930726c99964d7e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.13"
   boolean_selector:
     dependency: transitive
     description:

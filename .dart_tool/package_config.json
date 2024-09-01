@@ -32,6 +32,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "aws_lambda_dart_runtime_ns",
+      "rootUri": "file:///home/gitpod/.pub-cache/hosted/pub.dev/aws_lambda_dart_runtime_ns-0.0.13",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///home/gitpod/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -308,8 +314,8 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-08-26T11:17:21.687048Z",
+  "generated": "2024-09-01T02:48:14.901542Z",
   "generator": "pub",
-  "generatorVersion": "3.5.1",
+  "generatorVersion": "3.5.2",
   "pubCache": "file:///home/gitpod/.pub-cache"
 }

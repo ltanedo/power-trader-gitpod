@@ -1,3 +1,5 @@
-void main() {
-  print("Hello, World!");
+import './handler.dart';
+
+void main() async {
+  var response = handler();
 }

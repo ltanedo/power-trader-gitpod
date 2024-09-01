@@ -1,4 +1,4 @@
-import { handler } from "./main.mjs";
+import { handler } from "./handler.mjs";
 
 var data = await handler();
 console.log(data);

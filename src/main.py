@@ -1,4 +1,5 @@
-import pandas
-import polars
-import requests
+import handler 
+
+data = handler.lambda_handler({},{})
+print(data)
 

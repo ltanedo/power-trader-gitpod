@@ -14,7 +14,8 @@
         "axios": "0.24.0",
         "deepgram": "^1.0.3",
         "formik": "^2.2.9",
-        "nodejs-polars": "^0.0.5",
+        "node-fetch": "^3.3.2",
+        "nodejs-polars": "^0.14.0",
         "swr": "^1.1.2"
     }
 }
