@@ -1,12 +1,12 @@
 # A Rust CLI template on Gitpod
 
-This is a [Rust CLI](https://rust-starter.github.io) template configured for ephemeral cloud development environments on [Gitpod](https://www.gitpod.io/).
+This is a template configured for ephemeral cloud development environments on [Gitpod](https://www.gitpod.io/). It includes Python, Javascript, Rust, and Dart. Easily get coding!
 
 ## Next Steps
 
 Click the button below to start a new development environment:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/ltanedo/powertrader-manuals/tree/manual-0)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ltanedo/powertrader-manuals/tree/manual-0)
 
 ## Get Started With Your Own Project
 
