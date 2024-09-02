@@ -9,12 +9,11 @@ use std::fs::File;
 pub(crate) async fn handler() -> Result<(), Box<dyn std::error::Error>> {
 
     let request = Requests {
-        url: "https://jsonplaceholder.typicode.com/users",
-        params: json!({
-          "k1": "one",
-          "k2": ["1","2","3"]
-        }),
-        headers: json!({ "Content-Type": "application/json" }),
+            url: "https://api.orats.io/datav2/snapshot/strikes15",
+            params: json!({
+              "token": "{YOUR_ORATS_KEY}",
+              "tradeDate": "202008201130",
+            }),
         ..Requests::default()
     };
     

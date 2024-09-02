@@ -4,15 +4,11 @@ import 'package:http/http.dart' as http;
 
 void handler() async {
   var response = await get(
-    url: "https://jsonplaceholder.typicode.com/users",
+    url: "https://api.orats.io/datav2/snapshot/strikes15",
     params: {
-      "one": "val1",
-      "two": "val2",
+      "token": "{YOUR_ORATS_KEY}",
+      "tradeDate": "202008201130",
     },
-    headers: {
-      "h1": "1",
-      "h2": "2"
-    }
   );
   print(response);
 }

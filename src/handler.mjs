@@ -7,12 +7,11 @@ export const handler = async (event) => {
     // TODO implement
 
     var data = await get({
-      url: "https://jsonplaceholder.typicode.com/users",
-      params: {
-        "k1": "one",
-        "k2": ["1","2","3"]
-      },
-      headers: { 'Content-Type': 'application/json' },
+        url: "https://api.orats.io/datav2/snapshot/strikes15",
+        params: {
+          "token": "{YOUR_ORATS_KEY}",
+          "tradeDate": "202008201130",
+        },
     })
     
     const df = pl.DataFrame(flattenRecords(data));
